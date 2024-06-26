@@ -1,13 +1,34 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
+import Finish from "../components/Finish";
+import Navbar from "../components/Navbar";
 import Sidebar from "../components/Sidebar";
 
 const FinishPage = () => {
+  const [showAlert, setShowAlert] = useState(false);
+  const alertMessage = {
+    title: "Woohoo! You did it.",
+    message: "Thank you for completing your account setup. Let's go!",
+  };
+
+  useEffect(() => {
+    setShowAlert(true);
+  }, []);
+
+  const handleCloseAlert = () => {
+    setShowAlert(false);
+  };
+
   return (
     <div className="flex">
+      <Navbar
+        showAlert={showAlert}
+        alertMessage={alertMessage}
+        alertStyle="bg-green-100 border border-green-300 text-green-600"
+        onCloseAlert={handleCloseAlert}
+      />
       <Sidebar />
-      <div className="flex-1 p-8">
-        <h2 className="text-xl font-bold mb-4">Finish</h2>
-        <p>Finish setup instructions go here.</p>
+      <div className="ml-[226px] mt-[100px] flex justify-center items-center w-[1052px] h-[980px]">
+        <Finish />
       </div>
     </div>
   );

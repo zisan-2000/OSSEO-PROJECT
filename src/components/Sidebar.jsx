@@ -12,8 +12,7 @@ const Sidebar = ({ onLinkClick }) => {
             <NavLink
               to="/contacts"
               activeClassName="text-yellow-500"
-              className="flex items-center"
-              onClick={() => onLinkClick("contacts")}
+              className="flex items-center hover:bg-white hover:text-blue-600 transition duration-300 ease-in-out p-2 rounded"
             >
               <span className="mr-2">•</span> Contacts
             </NavLink>
@@ -22,8 +21,7 @@ const Sidebar = ({ onLinkClick }) => {
             <NavLink
               to="/business-details"
               activeClassName="text-yellow-500"
-              className="flex items-center"
-              onClick={() => onLinkClick("business-details")}
+              className="flex items-center hover:bg-white hover:text-blue-600 transition duration-300 ease-in-out p-2 rounded"
             >
               <span className="mr-2">•</span> Business Details
             </NavLink>
@@ -32,7 +30,7 @@ const Sidebar = ({ onLinkClick }) => {
             <NavLink
               to="/brand-assets"
               activeClassName="text-yellow-500"
-              className="flex items-center"
+              className="flex items-center hover:bg-white hover:text-blue-600 transition duration-300 ease-in-out p-2 rounded"
             >
               <span className="mr-2">•</span> Brand Assets
             </NavLink>
@@ -41,7 +39,7 @@ const Sidebar = ({ onLinkClick }) => {
             <NavLink
               to="/grant-access"
               activeClassName="text-yellow-500"
-              className="flex items-center"
+              className="flex items-center hover:bg-white hover:text-blue-600 transition duration-300 ease-in-out p-2 rounded"
             >
               <span className="mr-2">•</span> Grant Access
             </NavLink>
@@ -50,7 +48,7 @@ const Sidebar = ({ onLinkClick }) => {
             <NavLink
               to="/finish"
               activeClassName="text-yellow-500"
-              className="flex items-center"
+              className="flex items-center hover:bg-white hover:text-blue-600 transition duration-300 ease-in-out p-2 rounded"
             >
               <span className="mr-2">•</span> Finish
             </NavLink>

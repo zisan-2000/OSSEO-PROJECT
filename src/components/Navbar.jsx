@@ -1,6 +1,6 @@
 import React from "react";
 
-const Navbar = ({ showAlert, alertMessage, alertStyle }) => {
+const Navbar = ({ showAlert, alertMessage, alertStyle, onCloseAlert }) => {
   return (
     <nav className="bg-white h-[100px] w-full flex items-center shadow-md fixed top-0 left-0 px-8">
       <div className="flex items-center">
@@ -18,7 +18,9 @@ const Navbar = ({ showAlert, alertMessage, alertStyle }) => {
               {alertMessage.message}
             </span>
           </div>
-          <button className="ml-4 text-pink-600">✖</button>
+          <button className="ml-4 text-pink-600" onClick={onCloseAlert}>
+            ✖
+          </button>
         </div>
       )}
     </nav>
