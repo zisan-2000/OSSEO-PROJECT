@@ -2,9 +2,11 @@ import React from "react";
 
 const BusinessDetailsForm = () => {
   return (
-    <div className="bg-white p-8 shadow-md w-[968px] h-auto ml-[261px] mt-[139px] rounded-md">
-      <h2 className="text-2xl font-bold mb-6">Business Details</h2>
-      <p className="mb-6 text-gray-700">
+    <div className="bg-white p-4 md:p-8 shadow-md w-full max-w-[968px] mx-auto mt-16 md:mt-24 rounded-md">
+      <h2 className="text-xl md:text-2xl font-bold mb-4 md:mb-6">
+        Business Details
+      </h2>
+      <p className="mb-4 md:mb-6 text-gray-700">
         Add your business details so our team has the correct information for
         creating local business listings through directory submissions. Use the
         search function by typing and selecting your business location. Search
@@ -12,7 +14,7 @@ const BusinessDetailsForm = () => {
         street address. You can also add your details manually.
       </p>
       <form>
-        <div className="mb-6">
+        <div className="mb-4 md:mb-6">
           <label className="block text-gray-700 mb-2">
             Search For Your Business on Google Maps (Recommended)
           </label>
@@ -23,7 +25,7 @@ const BusinessDetailsForm = () => {
           />
         </div>
         <h3 className="text-lg font-bold mb-4">Add Your Business Manually</h3>
-        <p className="mb-6 text-gray-700">
+        <p className="mb-4 md:mb-6 text-gray-700">
           Use the fields below to enter as many details as possible about your
           business. These should match your Google profile and what you want to
           display to the general public.
@@ -60,8 +62,8 @@ const BusinessDetailsForm = () => {
             Social Profile Links <span className="text-gray-500">▼</span>
           </button>
         </div>
-        <div className="flex justify-between mt-8">
-          <button type="button" className="text-gray-700">
+        <div className="flex flex-col md:flex-row justify-between mt-4 md:mt-8">
+          <button type="button" className="text-gray-700 mb-4 md:mb-0">
             Save & Finish Later
           </button>
           <button

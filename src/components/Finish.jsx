@@ -5,7 +5,6 @@ const Finish = () => {
   const navigate = useNavigate();
 
   const handleTourClick = () => {
-    // Logic for beginning the tour can be added here
     navigate("/tour"); // example route
   };
 
@@ -14,16 +13,18 @@ const Finish = () => {
   };
 
   return (
-    <div className="bg-white p-8 shadow-md w-[968px] h-[722px] ml-[262px] mt-[138px] rounded-md text-center">
-      <h2 className="text-2xl font-bold mb-6">Setup Complete!</h2>
-      <p className="mb-6 text-gray-700">
+    <div className="bg-white p-4 md:p-8 shadow-md w-full max-w-[968px] mx-auto mt-16 md:mt-24 rounded-md text-center">
+      <h2 className="text-xl md:text-2xl font-bold mb-4 md:mb-6">
+        Setup Complete!
+      </h2>
+      <p className="mb-4 md:mb-6 text-gray-700">
         Let’s take a 1 minute tour of your SEO dashboard. Click the button below
         to begin.
       </p>
-      <div className="flex justify-center space-x-4">
+      <div className="flex flex-col md:flex-row justify-center space-y-4 md:space-y-0 md:space-x-4">
         <button
           onClick={handleTourClick}
-          className="bg-gradient-to-b from-[#0FD03B] to-[#0B9229] text-white py-2 px-6 rounded "
+          className="bg-gradient-to-b from-[#0FD03B] to-[#0B9229] text-white py-2 px-6 rounded"
         >
           Begin 1 Minute Tour
         </button>

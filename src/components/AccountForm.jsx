@@ -2,15 +2,17 @@ import React from "react";
 
 const AccountForm = () => {
   return (
-    <div className="bg-white p-8 shadow-md w-[968px] h-auto ml-[261px] mt-[139px] rounded-md">
-      <h2 className="text-2xl font-bold mb-6">Account Contacts</h2>
-      <p className="mb-6 text-gray-700">
+    <div className="bg-white p-4 md:p-8 shadow-md w-full max-w-[968px] mx-auto mt-16 md:mt-24 rounded-md ml-16">
+      <h2 className="text-xl md:text-2xl font-bold mb-4 md:mb-6">
+        Account Contacts
+      </h2>
+      <p className="mb-4 md:mb-6 text-gray-700">
         Add contacts you want us to communicate with, or anyone you want to have
         access to your account and reports. You can add additional contacts
         later from your business profile.
       </p>
       <form>
-        <div className="mb-6">
+        <div className="mb-4 md:mb-6">
           <label className="block text-gray-700 mb-2">Primary User</label>
           <input
             type="text"
@@ -18,7 +20,7 @@ const AccountForm = () => {
             className="w-full p-2 border border-gray-300 rounded"
           />
         </div>
-        <div className="flex gap-4 mb-6">
+        <div className="flex flex-col md:flex-row gap-4 mb-4 md:mb-6">
           <input
             type="email"
             placeholder="johnsmith@abcompany.com"
@@ -52,10 +54,10 @@ const AccountForm = () => {
             className="w-full p-2 border border-gray-300 rounded"
           />
         </div>
-        <div className="flex items-center justify-between">
+        <div className="flex flex-col md:flex-row items-center justify-between">
           <button
             type="button"
-            className="bg-gray-100 text-gray-700 py-2 px-4 rounded border border-gray-300"
+            className="bg-gray-100 text-gray-700 py-2 px-4 rounded border border-gray-300 mb-4 md:mb-0"
           >
             + Add Contact
           </button>
@@ -66,8 +68,8 @@ const AccountForm = () => {
             </label>
           </div>
         </div>
-        <div className="flex justify-between mt-8">
-          <button type="button" className="text-gray-700">
+        <div className="flex flex-col md:flex-row justify-between mt-4 md:mt-8">
+          <button type="button" className="text-gray-700 mb-4 md:mb-0">
             Skip & Finish Later
           </button>
           <button
