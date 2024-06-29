@@ -1,6 +1,12 @@
 import React from "react";
 
 const GrantAccessForm = () => {
+  const handleSubmit = (event) => {
+    event.preventDefault();
+    // Handle form submission logic here
+    console.log("Form submitted");
+  };
+
   return (
     <div className="bg-white p-4 md:p-8 shadow-md w-full max-w-[964px] mx-auto mt-16 md:mt-24 rounded-md">
       <h2 className="text-xl md:text-2xl font-bold mb-4 md:mb-6">
@@ -40,7 +46,7 @@ const GrantAccessForm = () => {
           agent@ocseo.com
         </a>
       </p>
-      <form>
+      <form onSubmit={handleSubmit}>
         <div className="mb-4 md:mb-6">
           <label className="block text-gray-700 mb-2">Provide Login</label>
           <select className="w-full p-2 border border-gray-300 rounded mb-4">

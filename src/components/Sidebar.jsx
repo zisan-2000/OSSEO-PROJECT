@@ -1,4 +1,5 @@
 import React from "react";
+import { FaPowerOff } from "react-icons/fa";
 import { NavLink } from "react-router-dom";
 
 const Sidebar = ({ isOpen }) => {
@@ -72,6 +73,12 @@ const Sidebar = ({ isOpen }) => {
             </NavLink>
           </li>
         </ul>
+      </div>
+      <div className="mt-auto">
+        <button className="w-full text-left p-2 rounded hover:bg-white hover:text-blue-600 transition duration-300 ease-in-out flex items-center">
+          <FaPowerOff className="w-6 h-6 mr-2" />
+          Logout
+        </button>
       </div>
     </div>
   );

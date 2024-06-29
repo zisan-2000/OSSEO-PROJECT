@@ -1,6 +1,12 @@
 import React from "react";
 
 const BrandAssetsForm = () => {
+  const handleSubmit = (event) => {
+    event.preventDefault();
+    // Handle form submission logic here
+    console.log("Form submitted");
+  };
+
   return (
     <div className="bg-white p-4 md:p-8 shadow-md w-full max-w-[964px] mx-auto mt-16 md:mt-24 rounded-md">
       <h2 className="text-xl md:text-2xl font-bold mb-4 md:mb-6">
@@ -12,11 +18,13 @@ const BrandAssetsForm = () => {
         free to upload files directly. More material helps us perform better
         work, and deliver better results.
       </p>
-      <form>
+      <form onSubmit={handleSubmit}>
         <div className="mb-4 md:mb-6">
           <label className="block text-gray-700 mb-2">Media Library</label>
           <div className="w-full p-2 border border-gray-300 rounded h-32 flex justify-center items-center">
-            <button className="text-2xl text-gray-400">+</button>
+            <button type="button" className="text-2xl text-gray-400">
+              +
+            </button>
           </div>
         </div>
         <div className="mb-4 md:mb-6">

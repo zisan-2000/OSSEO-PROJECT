@@ -1,4 +1,5 @@
 import React from "react";
+import logo from "../assets/Adon-venture-white.jpg"; // Import the logo
 
 const Navbar = ({
   showAlert,
@@ -13,9 +14,10 @@ const Navbar = ({
         &#9776;
       </button>
       <div className="flex items-center ml-4">
-        <img src="logo.png" alt="OCSEO Logo" className="h-8 md:h-10" />
+        <img src={logo} alt="OCSEO Logo" className="h-16 md:h-20 w-auto" />{" "}
+        {/* Adjusted size */}
       </div>
-      <div className="flex-grow"></div>{" "}
+      <div className="flex-grow"></div>
       {showAlert && (
         <div
           className={`px-2 py-1 md:px-4 md:py-2 rounded-lg flex items-center ${alertStyle}`}
